@@ -24,11 +24,11 @@ class UsersRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:25',
+            'name' => 'required|max:80',
             'email' => 'required|email|unique:users',
-            'role_id'=> 'required|max:2',
-            'is_active'=> 'required|max:2',
-            'password' => 'required|min:6'
+            'role_id'=> 'required|max:20',
+            'is_active'=> 'required|max:20',
+            'password' => 'required|min:9'
         ];
     }
 }

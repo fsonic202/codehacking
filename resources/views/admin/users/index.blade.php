@@ -15,6 +15,7 @@
         <th>Status</th>
         <th>Created</th>
         <th>Update</th>
+        <th>Photo</th>
       </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
         <td>{{$user->is_active == 1 ? 'Active' : 'Not Active'}}</td>
         <td>{{$user->created_at->diffForHumans()}}</td>
         <td>{{$user->updated_at->diffForHumans()}}</td>
+        <td>{{$user->photo_id}}</td>
       </tr>
             @endforeach
        @endif

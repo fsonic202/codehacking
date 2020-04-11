@@ -30,8 +30,8 @@
     <meta name="author" content="">
 
     <title>Admin</title>
- 
-    
+
+
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('css/app.css')}}" rel="stylesheet">
 
@@ -71,9 +71,8 @@
           aria-haspopup="true" aria-expanded="false">Users
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="{{url('admin/users/')}}">All Users</a>
+          <a class="dropdown-item" href="{{url('admin/users/create')}}">Create User</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -106,7 +105,7 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      
+
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item">
