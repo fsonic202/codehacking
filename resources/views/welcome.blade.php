@@ -8,7 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <!-- Styles -->
         <style>
             html, body {
@@ -79,12 +80,13 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            <div class="container">
+                <div class="col-md-4">
+                    <div class="title m-b-md">
+                        <h1> Home Page</h1>
+                    </div>
                 </div>
 
-                
             </div>
         </div>
     </body>

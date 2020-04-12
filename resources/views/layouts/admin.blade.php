@@ -49,7 +49,7 @@
 </head>
 <div id="app">
 
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm">
   <a class="navbar-brand">
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
