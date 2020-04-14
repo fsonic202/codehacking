@@ -1,2 +1,12 @@
+@extends('layouts.app')
 
- <h1>Customer 404 Page</h1>
+
+ @section('content')
+
+     <div class="container">
+         <h1>Opps no page available</h1>
+
+     </div>
+
+
+ @stop

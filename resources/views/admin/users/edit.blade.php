@@ -48,10 +48,20 @@
                     </div>
 
                     <div class="form-group">
-                        {!! Form::submit('Create Post', ['class'=>'btn btn-primary'])!!}
+                        {!! Form::submit('Update User', ['class'=>'btn btn-primary col-sm-6'])!!}
                     </div>
 
                     {!! Form::close() !!}
+
+
+                    <div class="form-group">
+                        {!! Form::model($user, ['method'=>'DELETE', 'action'=> ['AdminUsersController@destroy', $user->id],'files'=>true]) !!}
+
+                        {!! Form::submit('Delete User', ['class'=>'btn btn-danger col-sm-6'])!!}
+
+                    </div>
+                    {!!Form::close() !!}
+
 
                     @Include('includes.form_error')
                 </div>

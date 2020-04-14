@@ -5,6 +5,10 @@
 @section('content')
 <div class="container">
 <h1>Users</h1>
+        @if(Session::has('deleted_user'))
+
+            <div class="alert alert-danger"> {{session('deleted_user')}}</div>
+        @endif
 <table class="table table-hover">
     <thead>
       <tr>
@@ -36,6 +40,6 @@
        @endif
     </tbody>
   </table>
-</div>
 
+</div>
 @stop

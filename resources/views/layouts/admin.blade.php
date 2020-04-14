@@ -64,7 +64,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Dashboard</a>
+        <a class="nav-link" href="{{url('admin')}}">Dashboard</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
@@ -80,9 +80,8 @@
           aria-haspopup="true" aria-expanded="false">Posts
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="{{url('admin/posts/')}}">All Post</a>
+            <a class="dropdown-item" href="{{url('admin/posts/create')}}">Create Post</a>
         </div>
       </li>
       <li class="nav-item dropdown">
