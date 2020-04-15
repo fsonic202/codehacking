@@ -8,6 +8,7 @@ use App\Photo;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class AdminPostsController extends Controller
 {
@@ -127,6 +128,12 @@ class AdminPostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Post::findOrFail($id);
+        $post = Post::findOrFail($id);
+        unlink(public_path() . $post->photo->file);
+        $post->delete();
+        Session::flash('deleted_post','The post has been deleted');
+        return  redirect('/admin/posts');
+
     }
 }

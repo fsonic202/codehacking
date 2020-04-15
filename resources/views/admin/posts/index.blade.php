@@ -5,6 +5,10 @@
 @section('content')
 <div class="container">
     <h1>Post</h1>
+    @if(Session::has('deleted_post'))
+
+        <div class="alert alert-danger"> {{session('deleted_post')}}</div>
+    @endif
     <table class="table table-hover">
         <thead>
         <tr>
@@ -28,7 +32,7 @@
                     <td><a href="{{url('admin/posts/' .$post->id. '/edit')}}">{{$post->user->name}}</a></td>
                     <td>{{$post->category ? $post->category->name: 'Uncategorized'}}</td>
                     <td>{{$post->title}}</td>
-                    <td>{{$post->body}}</td>
+                    <td>{{Str::limit($post->body,  30)}}</td>
                     <td>{{$post->created_at->diffForHumans()}}</td>
                     <td>{{$post->updated_at->diffForHumans()}}</td>
                 </tr>
