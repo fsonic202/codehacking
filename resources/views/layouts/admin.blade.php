@@ -89,9 +89,8 @@
           aria-haspopup="true" aria-expanded="false">Categories
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="{{url('admin/categories/')}}">All Category</a>
+          <a class="dropdown-item" href="{{url('admin/categories/create')}}">Create Category</a>
         </div>
       </li>
       <li class="nav-item dropdown">
