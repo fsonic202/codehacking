@@ -25,7 +25,7 @@
                 <tr>
                     <td>{{$post->id}}</td>
                     <td><img height="50" src="{{$post->photo ?  $post->photo->file : 'http://placehold.it/400x400'}}" alt="" class="img-responsiive img-rounded"></td>
-                    <td>{{$post->user->name}}</td>
+                    <td><a href="{{url('admin/posts/' .$post->id. '/edit')}}">{{$post->user->name}}</a></td>
                     <td>{{$post->category ? $post->category->name: 'Uncategorized'}}</td>
                     <td>{{$post->title}}</td>
                     <td>{{$post->body}}</td>
